@@ -1,4 +1,4 @@
-#jwscraper
+# jwscraper
 
 A python library for scraping video url from JW players. Bypasses CloudFlare protection.
 
@@ -8,7 +8,7 @@ To install all python dependencies just run
 pip3 install selenium cfscrape bs4
 ```
 
-You also need to install Google Chrome
+You also need to install Mozilla Firefox and its [driver](https://github.com/mozilla/geckodriver/releases)
 
 ### Usage
 

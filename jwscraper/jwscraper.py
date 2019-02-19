@@ -1,7 +1,7 @@
 import cfscrape
 import bs4
 from selenium import webdriver
-from selenium.webdriver import ChromeOptions
+from selenium.webdriver import FirefoxOptions
 from selenium.common.exceptions import NoSuchElementException
 from jwscraper.no_video_available_exception import *
 
@@ -38,10 +38,10 @@ def get_unprotected_link(url: str) -> str:
 
 def scrape_video_no_protection(url: str) -> str:
     # opens a driver on the given url
-    options = ChromeOptions();
-    options.add_argument("headless")
+    options = FirefoxOptions();
+    options.add_argument("-headless")
 
-    driver = webdriver.Chrome(options=options)  
+    driver = webdriver.Firefox(options=options)  
     driver.get(url)
     
     try:
@@ -50,7 +50,7 @@ def scrape_video_no_protection(url: str) -> str:
         play_button.click()
 
         # gets video url from page once is loaded
-        video_player_element = driver.find_element_by_xpath("//video[@class = 'l{}']".format(VIDEO_ELEMENT_CLASS))
+        video_player_element = driver.find_element_by_xpath("//video[@class = '{}']".format(VIDEO_ELEMENT_CLASS))
         video_url = video_player_element.get_attribute('src')   
     except NoSuchElementException:
         raise NoVideoAvailableException
