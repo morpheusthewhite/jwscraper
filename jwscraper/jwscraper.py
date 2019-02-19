@@ -37,6 +37,9 @@ def get_unprotected_link(url: str) -> str:
 
 
 def scrape_video_no_protection(url: str) -> str:
+    """
+    Gets video url directly from page. Raises a NoVideoAvailableException if no player is found
+    """
     # opens a driver on the given url
     options = FirefoxOptions();
     options.add_argument("-headless")
@@ -62,6 +65,9 @@ def scrape_video_no_protection(url: str) -> str:
 
 
 def scrape_video(url: str, bypass_cloudflare: bool=True) ->str:
+    """
+    Returns the url of the video in the current page. Raises a NoVideoAvailableException if no player is found
+    """
     if bypass_cloudflare:
         url = get_unprotected_link(url)
 
