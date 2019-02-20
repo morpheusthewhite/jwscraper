@@ -1,5 +1,3 @@
-from jwscraper.scraping import scrape_video 
+from .scraping import scrape_video 
 
 name = 'jwscraper'
-
-__all__ = ["scraping"]
