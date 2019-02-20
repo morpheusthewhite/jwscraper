@@ -10,6 +10,14 @@ pip3 install selenium cfscrape bs4
 
 You also need to install Mozilla Firefox and its [driver](https://github.com/mozilla/geckodriver/releases)
 
+#### Installation
+
+After installing required packages run
+
+```
+sudo python setup.py install
+```
+
 ### Usage
 
 Just call
