@@ -3,7 +3,7 @@ import bs4
 from selenium import webdriver
 from selenium.webdriver import FirefoxOptions
 from selenium.common.exceptions import NoSuchElementException
-from jwscraper.no_video_available_exception import *
+from jwscraper.common import *
 
 
 PLAY_BUTTON_CLASS = 'jw-icon jw-icon-display jw-button-color jw-reset'
