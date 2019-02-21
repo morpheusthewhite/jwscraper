@@ -8,6 +8,7 @@ from jwscraper.common import *
 
 PLAY_BUTTON_CLASS = 'jw-icon jw-icon-display jw-button-color jw-reset'
 VIDEO_ELEMENT_CLASS = 'jw-video jw-reset'
+NO_VIDEO_MESSAGE = 'No video in the current page'
 
 
 def get_unprotected_link(url: str) -> str:
@@ -31,7 +32,7 @@ def get_unprotected_link(url: str) -> str:
     
     # checking if a valid url has been found
     if result_url == '':
-        raise NoVideoAvailableException
+        raise NoVideoAvailableException(NO_VIDEO_MESSAGE)
     else:
         return result_url
 
@@ -56,7 +57,7 @@ def scrape_video_no_protection(url: str) -> str:
         video_player_element = driver.find_element_by_xpath("//video[@class = '{}']".format(VIDEO_ELEMENT_CLASS))
         video_url = video_player_element.get_attribute('src')   
     except NoSuchElementException:
-        raise NoVideoAvailableException
+        raise NoVideoAvailableException(NO_VIDEO_MESSAGE)
 
     # closes driver
     driver.close()
