@@ -1,2 +1,6 @@
 *.pyc
 geckodriver.log
+
+build/
+dist/
+jwscraper.egg-info/
