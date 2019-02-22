@@ -67,9 +67,21 @@ def scrape_video_no_protection(url: str) -> str:
 
 def scrape_video(url: str, bypass_cloudflare: bool=True) ->str:
     """
-    Returns the url of the video in the current page. Raises a NoVideoAvailableException if no player is found
+    Returns the url of the video in the current page. 
+    Raises a NoVideoAvailableException if no player is found
     """
     if bypass_cloudflare:
         url = get_unprotected_link(url)
 
     return scrape_video_no_protection(url)
+
+
+def scrape_save_video(url: str, filename:str, bypass_cloudflare: bool=True):
+    """
+    Saves the video in the given url as filename after scraping it. 
+    Raises a NoVideoAvailableException if no player is found
+    """
+    video_url = scrape_video(url, bypass_cloudflare)
+    save_video_at(video_url, filename)
+
+    return
