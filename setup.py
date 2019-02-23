@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 requirements = []
 with open("requirements.txt", "r") as requirements_file:
-    requirements = [l.strip() for l in requirements_file]        
+    requirements = [l.strip() for l in requirements_file]
 
 setuptools.setup(
     name="jwscraper",

@@ -1,4 +1,5 @@
-from jwscraper import *
+from jwscraper.scraping import *
+from jwscraper.common import *
 
 START_TEST_STRING = 'Starting test n. {}'
 INVALID_URL='not_valid'
