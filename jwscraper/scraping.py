@@ -29,7 +29,7 @@ def get_unprotected_link(url: str) -> str:
     for iframe in iframes:
         if 'http' in iframe['src']:
             result_url = iframe['src']
-    
+
     # checking if a valid url has been found
     if result_url == '':
         raise NoVideoAvailableException(NO_VIDEO_MESSAGE)
@@ -45,9 +45,9 @@ def scrape_video_no_protection(url: str) -> str:
     options = FirefoxOptions();
     options.add_argument("-headless")
 
-    driver = webdriver.Firefox(options=options)  
+    driver = webdriver.Firefox(options=options)
     driver.get(url)
-    
+
     try:
         # clicks play to start video and load video url in the page
         play_button = driver.find_element_by_xpath("//div[@class = '{}']".format(PLAY_BUTTON_CLASS))
@@ -55,7 +55,7 @@ def scrape_video_no_protection(url: str) -> str:
 
         # gets video url from page once is loaded
         video_player_element = driver.find_element_by_xpath("//video[@class = '{}']".format(VIDEO_ELEMENT_CLASS))
-        video_url = video_player_element.get_attribute('src')   
+        video_url = video_player_element.get_attribute('src')
     except NoSuchElementException:
         raise NoVideoAvailableException(NO_VIDEO_MESSAGE)
 
@@ -67,7 +67,7 @@ def scrape_video_no_protection(url: str) -> str:
 
 def scrape_video(url: str, bypass_cloudflare: bool=True) ->str:
     """
-    Returns the url of the video in the current page. 
+    Returns the url of the video in the current page.
     Raises a NoVideoAvailableException if no player is found
     """
     if bypass_cloudflare:
@@ -76,10 +76,11 @@ def scrape_video(url: str, bypass_cloudflare: bool=True) ->str:
     return scrape_video_no_protection(url)
 
 
-def scrape_save_video(url: str, filename:str, bypass_cloudflare: bool=True):
+def scrape_save_video(url: str, filename:str=None, bypass_cloudflare: bool=True):
     """
-    Saves the video in the given url as filename after scraping it. 
-    Raises a NoVideoAvailableException if no player is found
+    Saves the video in the given url as filename after scraping it.
+    Raises a NoVideoAvailableException if no player is found.
+    If filename is None it is saved in the current directory with an automatically detected name.
     """
     video_url = scrape_video(url, bypass_cloudflare)
     save_video_at(video_url, filename)

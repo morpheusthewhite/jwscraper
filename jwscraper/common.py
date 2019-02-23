@@ -13,7 +13,7 @@ def save_video_at(url: str, filename: str=None):
 
     if filename is None:
         filename = r.url.split("/")[-1]
-    
+
     with open(filename, "wb") as out_file:
         out_file.write(r.content)
 
