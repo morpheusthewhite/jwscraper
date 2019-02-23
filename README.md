@@ -1,11 +1,8 @@
 # jwscraper
-<a alt="Contributors"><img src="https://img.shields.io/codacy/coverage/16029fd078e1491d98db2272cdc1d9b0.svg" /></a><a alt="Contributors">
-        <img src="https://img.shields.io/codacy/grade/16029fd078e1491d98db2272cdc1d9b0.svg
-" /></a><a alt="Contributors">
-        <img src="https://img.shields.io/github/license/morpheusthewhite/jwscraper.svg
-" /></a>
+[![codacy coverage](https://img.shields.io/codacy/coverage/16029fd078e1491d98db2272cdc1d9b0.svg)]()
+[![codacy code quality](https://img.shields.io/codacy/grade/16029fd078e1491d98db2272cdc1d9b0.svg)]()
+[![license](https://img.shields.io/github/license/morpheusthewhite/jwscraper.svg)](https://github.com/morpheusthewhite/jwscraper/blob/master/LICENSE)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/morpheusthewhite/jwscraper/issues)
-
 
 A simple python library for scraping video url from JW players. Bypasses CloudFlare protection.
 
