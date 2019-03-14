@@ -33,17 +33,18 @@
         },
         "certifi": {
             "hashes": [
-                "sha256:47f9c83ef4c0c621eaef743f133f09fa8a74a9b75f037e8624f83bd1b6626cb7",
-                "sha256:993f830721089fef441cdfeb4b2c8c9df86f0c63239f06bd025a76a7daddb033"
+                "sha256:59b7658e26ca9c7339e00f8f4636cdfe59d34fa37b9b04f6f9e9926b3cece1a5",
+                "sha256:b26104d6835d1f5e49452a26eb2ff87fe7090b89dfcaee5ea2212697e1e1d7ae"
             ],
-            "version": "==2018.11.29"
+            "version": "==2019.3.9"
         },
         "cfscrape": {
             "hashes": [
-                "sha256:cb9159955d0e6e82cf4ad8cc9b19413e68ebfed1ce98a26e51f62e66d45146f1"
+                "sha256:6aa4966be1efd8f58e768d21ec573ec334f13d9c3be3b0324df2bf912abcef94",
+                "sha256:8aba80eb002869577b2dc59edc158e73ad7cefc837abf39dbead5ca142a55e49"
             ],
             "index": "pypi",
-            "version": "==1.9.5"
+            "version": "==1.9.6"
         },
         "chardet": {
             "hashes": [
