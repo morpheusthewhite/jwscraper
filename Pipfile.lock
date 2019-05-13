@@ -40,11 +40,12 @@
         },
         "cfscrape": {
             "hashes": [
-                "sha256:0794aa78e586a3af578ff0869f95779bd1702adcdbc9369e8dc470435caaf020",
-                "sha256:fa7fc172e6872f461377216ddd5a6d82c9650b9d10cac5aa0239998daf3e093a"
+                "sha256:b6f63b24932170221bdf171d73cc7eff5dce7f0f1e0fda0ff3afbf6563eac1f9",
+                "sha256:e0afdd8a6d5456c6c96555b9a71cdd41d3eaa3f14a8a032d64b700cb26ce98fd",
+                "sha256:f997840eb1ee8b1526c98683bdbe4ac4f925e4da8434f676620ce1d5e67c5d88"
             ],
             "index": "pypi",
-            "version": "==1.9.7"
+            "version": "==2.0.3"
         },
         "chardet": {
             "hashes": [
@@ -84,10 +85,10 @@
         },
         "urllib3": {
             "hashes": [
-                "sha256:4c291ca23bbb55c76518905869ef34bdd5f0e46af7afe6861e8375643ffee1a0",
-                "sha256:9a247273df709c4fedb38c711e44292304f73f39ab01beda9f6b9fc375669ac3"
+                "sha256:2393a695cd12afedd0dcb26fe5d50d0cf248e5a66f75dbd89a3d4eb333a61af4",
+                "sha256:a637e5fae88995b256e3409dc4d52c2e2e0ba32c42a6365fee8bbd2238de3cfb"
             ],
-            "version": "==1.24.2"
+            "version": "==1.24.3"
         }
     },
     "develop": {}
