@@ -40,12 +40,12 @@
         },
         "cfscrape": {
             "hashes": [
-                "sha256:b6f63b24932170221bdf171d73cc7eff5dce7f0f1e0fda0ff3afbf6563eac1f9",
-                "sha256:e0afdd8a6d5456c6c96555b9a71cdd41d3eaa3f14a8a032d64b700cb26ce98fd",
-                "sha256:f997840eb1ee8b1526c98683bdbe4ac4f925e4da8434f676620ce1d5e67c5d88"
+                "sha256:1558eaed94d8353b1f4080888e3b1755ca8af0bf339972a2db9cd14f4127644b",
+                "sha256:99877d394779a50ebb1c6b30ee3b52b6491b133bbe129c79e30bf2cfd89bcfba",
+                "sha256:d3c863352f31f3538d2b428c7b8c368cbeee943bd8120f082e7d4f83f769f142"
             ],
             "index": "pypi",
-            "version": "==2.0.3"
+            "version": "==2.0.4"
         },
         "chardet": {
             "hashes": [
