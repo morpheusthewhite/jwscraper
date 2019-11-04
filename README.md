@@ -4,7 +4,7 @@
 [![license](https://img.shields.io/github/license/morpheusthewhite/jwscraper.svg)](https://github.com/morpheusthewhite/jwscraper/blob/master/LICENSE)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/morpheusthewhite/jwscraper/issues)
 
-A simple python library for scraping video url from JW players. Bypasses CloudFlare protection.
+A simple python library for scraping videos url from JW players. Bypasses CloudFlare protection.
 
 ## Installation
 
@@ -13,9 +13,7 @@ sudo python3 setup.py install
 ```
 You also need to install Mozilla Firefox and its [driver](https://github.com/mozilla/geckodriver/releases)
 
-## Usage
-
-Just
+## Usage example
 
 ```python
 from jwscraper import scrape_video, scrape_save_video
