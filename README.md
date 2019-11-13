@@ -11,7 +11,7 @@ A simple python library for scraping videos url from JW players. Bypasses CloudF
 ```bash
 sudo python3 setup.py install
 ```
-You also need to install Mozilla Firefox and its [driver](https://github.com/mozilla/geckodriver/releases)
+You also need to install Mozilla Firefox and its [driver](https://github.com/mozilla/geckodriver/releases).
 
 ## Usage example
 
